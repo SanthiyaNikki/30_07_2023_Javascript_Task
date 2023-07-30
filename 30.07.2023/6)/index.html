@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6)</title>
+  </head>
+  <body>
+    <script>
+      function findSmallest(x, y, z) {
+        const smallest = x < y ? (x < z ? x : z) : y < z ? y : z;
+        return smallest;
+      }
+
+      const x = 15;
+      const y = 10;
+      const z = 5;
+
+      const result = findSmallest(x, y, z);
+      console.log(`The smallest number is ${result}`);
+    </script>
+  </body>
+</html>

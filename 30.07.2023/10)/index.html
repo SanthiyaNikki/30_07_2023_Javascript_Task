@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10)</title>
+  </head>
+  <body>
+    <script>
+      function calculateFactorial(number) {
+        let factorial = 1;
+
+        for (let i = 1; i <= number; i++) {
+          factorial *= i;
+        }
+
+        return factorial;
+      }
+
+      const userInput = prompt("Enter a number:");
+
+      const number = parseInt(userInput);
+
+      if (Number.isInteger(number) && number >= 0) {
+        const factorialResult = calculateFactorial(number);
+
+        alert(`The factorial of ${number} is ${factorialResult}`);
+      } else {
+        alert("Invalid input! Please enter a valid positive integer.");
+      }
+    </script>
+  </body>
+</html>

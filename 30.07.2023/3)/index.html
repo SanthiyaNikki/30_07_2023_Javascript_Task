@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3)</title>
+  </head>
+  <body>
+    <script>
+      const sentence = prompt("Enter a sentence:");
+
+      function countWords(sentence) {
+        const wordsArray = sentence.split(/\s+/);
+        const words = wordsArray.filter((word) => word.trim() !== "");
+        return words.length;
+      }
+      const wordCount = countWords(sentence);
+      alert(`The number of words in the sentence is ${wordCount}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4)</title>
+  </head>
+  <body>
+    <script>
+      function reverseString(str) {
+        const charArray = str.split("");
+
+        const reversedArray = charArray.reverse();
+
+        const reversedString = reversedArray.join("");
+
+        return reversedString;
+      }
+
+      const inputString = "My name is santhiya";
+      const reversedResult = reverseString(inputString);
+      console.log(reversedResult);
+    </script>
+  </body>
+</html>
